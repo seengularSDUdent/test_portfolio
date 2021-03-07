@@ -1,0 +1,305 @@
+header a {
+    color: #1F203F;
+    text-decoration: none;
+    font-family: IBM plex sans;
+}
+
+body {
+    margin: 0;
+    background-color: #F3EBC9;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #C0642A;
+    color: #000;
+    animation-name: reverse-zoom-header;
+    animation-duration: 2s; 
+}
+
+header:hover {
+    animation-name: zoom-header;
+    animation-duration: 2s;
+    height: 53px;
+}
+
+@keyframes zoom-header {
+    from{height: 44px;}
+    to{height: 53px;}
+}
+
+@keyframes reverse-zoom-header {
+    from{height: 53px;}
+    to{height: 44px;}
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-item {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: auto;
+    border-right-color: #F3EBC9;
+    border-left-color: #F3EBC9;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    animation: reverse-zoom-font;
+    animation-duration: 0.5s;
+}
+
+.headerButton:hover {
+    border-right-color: #000;
+    border-left-color: #000;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #ED933E;
+}
+
+.headerButton:active {
+    background-color: #e6e6e6;
+}
+
+header a:hover {
+    color: #fcfcfc;
+}
+
+.header-item:hover {
+    animation-name: zoom-font;
+    animation-duration: 1s;
+    font-size: 25px;
+}
+
+@keyframes zoom-font {
+    from{font-size: 20px;}
+    to{font-size: 25px;}
+}
+
+@keyframes reverse-zoom-font {
+    from{font-size: 25px;}
+    to{font-size:20px;}
+}
+
+header a:active {
+    color: white;
+}
+
+.main {
+    margin: 0 216px;
+}
+
+.main-inner {
+    margin: 0 216px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-logo {
+    margin: 128px 0;
+}
+
+.gallery-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px 256px 256px 256px;
+    box-sizing: border-box;
+}
+
+.gallery-one a {
+    text-decoration: none;
+}
+
+.grid-item1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/Tn.biology.logo-04.png) center no-repeat;
+}
+
+.grid-item1:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/Tn.biology.logo-04.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item2 {
+    grid-row: 1 / 3;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/rcrd.jpg) center no-repeat;
+}
+
+.grid-item2:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/rcrd.jpg) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item3 {
+    grid-row: 3 / 5;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/tbndboll-01.png) center no-repeat;
+}
+
+.grid-item3:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/tbndboll-01.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item4 {
+    grid-column: 2 / 4;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/LogoDurysy-02.png) center no-repeat;
+}
+
+.grid-item4:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/LogoDurysy-02.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item5 {
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/ghArtboard.png) center no-repeat;
+}
+
+.grid-item5:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/ghArtboard.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item6 {
+    grid-row: 4 / 6;
+    grid-column: 2 / 3;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/ice.jpg) center no-repeat;
+}
+
+.grid-item6:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/ice.jpg) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item7 { 
+    height: 256px;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/tesla.png) center no-repeat;
+}
+
+.grid-item7:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/tesla.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item8 {
+    grid-row: 5 / 7;
+    grid-column: 3 / 4;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/thewing.png) center no-repeat;
+}
+
+.grid-item8:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/thewing.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item9 {
+    grid-row: 6 / 8;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), #e8e8e8 url(contents/images/msq-01.jpg) center no-repeat;
+}
+
+.grid-item9:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/msq-01.jpg) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item10 {
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/olx-01.png) center no-repeat;
+    height: 256px;
+}
+
+.grid-item10:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/olx-01.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item11 {
+    height: 256px;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/r-02.png) center no-repeat;
+}
+
+.grid-item11:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/r-02.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-item12 {
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(contents/images/up.png) center no-repeat;
+}
+
+.grid-item12:hover {
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url(contents/images/up.png) center no-repeat;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+.grid-img {
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    background-size: 180%;
+}
+
+.grid-img:hover {
+    background-size: 200%;
+}
+
+@keyframes zoom {
+  from {background-size: 180%}
+  to {background-size: 200%}
+}
+
+.main-logo-second:active {
+    animation-name: moving-logo;
+    animation-duration: 0.25s;
+}
+
+@keyframes moving-logo {
+    from{width: 128px;
+         height: 231.5px;}
+    to{width: 116px;
+         height: 243px;}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #DE9220;
+}
+
+.inner-footer {
+    padding: 20px 10px 0 10px;
+    font-size: 20px;
+    color: #1F203F;
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 10px 30px;
+    font-family: IBM plex sans;
+}
+
+.inner-footer-foot {
+    background-color: #C0642A;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+}
