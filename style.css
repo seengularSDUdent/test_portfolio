@@ -95,7 +95,7 @@ header a:active {
 }
 
 .main {
-    margin: 0 216px;
+    margin: 0 256px;
 }
 
 .main-inner {
@@ -302,4 +302,11 @@ footer {
     padding: 0;
     width: 100%;
     height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        max-width: 1008px;
+        margin: 0 auto;
+    }
 }
