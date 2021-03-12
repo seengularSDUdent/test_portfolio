@@ -1,0 +1,278 @@
+header a {
+    color: #1F203F;
+    text-decoration: none;
+    font-family: IBM plex sans;
+}
+
+body {
+    margin: 0;
+    background-color: #F3EBC9;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #C0642A;
+    color: #000;
+    animation-name: reverse-zoom-header;
+    animation-duration: 2s; 
+}
+
+header:hover {
+    animation-name: zoom-header;
+    animation-duration: 2s;
+    height: 53px;
+}
+
+@keyframes zoom-header {
+    from{height: 44px;}
+    to{height: 53px;}
+}
+
+@keyframes reverse-zoom-header {
+    from{height: 53px;}
+    to{height: 44px;}
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.burger div{
+    width: 80px;
+    height: 10px;
+    background-color: #F3EBC9;
+    margin: 15px 0;
+    border-radius: 10px;
+    animation: zoom-burger-reverse;
+    animation-duration: 0.5s;
+}
+
+.burger {
+    display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  text-align: center;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.header-item {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: auto;
+    border-right-color: #F3EBC9;
+    border-left-color: #F3EBC9;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    animation: reverse-zoom-font;
+    animation-duration: 0.5s;
+}
+
+.headerButton:hover {
+    border-right-color: #000;
+    border-left-color: #000;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #ED933E;
+}
+
+.headerButton:active {
+    background-color: #e6e6e6;
+}
+
+header a:hover {
+    color: #fcfcfc;
+}
+
+.header-item:hover {
+    animation-name: zoom-font;
+    animation-duration: 1s;
+    font-size: 25px;
+}
+
+@keyframes zoom-font {
+    from{font-size: 20px;}
+    to{font-size: 25px;}
+}
+
+@keyframes reverse-zoom-font {
+    from{font-size: 25px;}
+    to{font-size:20px;}
+}
+
+header a:active {
+    color: white;
+}
+
+.main {
+    margin: 0 256px;
+}
+
+.main-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.main-gallery {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+	grid-gap: 20px;
+    grid-gap: 1em;
+    text-align: center;
+}
+
+.main-gallery a {
+    text-decoration: none;
+}
+
+.grid-element {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    animation: grid-element-zoom-reverse;
+    animation-duration: 0.5s;
+}
+
+.grid-element:hover {
+    animation: grid-element-zoom;
+    animation-duration: 0.5s;
+    margin: 10px;
+}
+
+@keyframes grid-element-zoom {
+    from {
+        margin: 0;
+    }
+    to {
+        margin: 10px;
+    }
+}
+
+@keyframes grid-element-zoom-reverse {
+    from {
+        margin: 10px;
+    }
+    to {
+        margin: 0;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #DE9220;
+}
+
+.inner-footer {
+    padding: 20px 10px 0 10px;
+    font-size: 20px;
+    color: #1F203F;
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 10px 30px;
+    font-family: IBM plex sans;
+}
+
+.inner-footer-foot {
+    background-color: #C0642A;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        max-width: 1008px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1008px) {
+    .main-inner {
+        margin: 0 32px;
+    }
+    .main-inner {
+        margin: 64px 0 16px 0;
+    }
+}
+
+@media handheld, (max-width: 722px) {
+    .burger {
+        display: block;
+    }
+    .headerButton {
+        display: none;
+    }
+    footer {
+        display: grid;
+    }
+    .inner-footer {
+        padding: 2px 0;
+        margin: 8px 0;
+    }
+    .inner-footer-foot {
+        margin: 0;
+    }
+    .main {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .burger {
+        display: block;
+    }
+    .headerButton {
+        display: none;
+    }
+    footer {
+        display: grid;
+    }
+    .inner-footer {
+        padding: 2px 0;
+        margin: 8px 0;
+    }
+    .inner-footer-foot {
+        margin: 0;
+    }
+    .main-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 400px;
+    }
+}
